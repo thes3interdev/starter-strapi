@@ -13,7 +13,7 @@ module.exports = ({ env }) => {
     /** development configuration */
     return {
       host: env("HOST"),
-      port: env.int("PORT_DEVELOPMENT"),
+      port: env.int("PORT_DEVELOPMENT", 1337),
       app: {
         keys: env.array("APP_KEYS"),
       },
